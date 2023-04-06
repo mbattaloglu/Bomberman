@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 265439030}
   - component: {fileID: 265439029}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,6 +371,7 @@ GameObject:
   - component: {fileID: 521052572}
   - component: {fileID: 521052571}
   - component: {fileID: 521052570}
+  - component: {fileID: 521052574}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -455,6 +456,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &521052574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521052569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a9086fb6b171914fac38639813ea149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputKey: 32
+  bombPrefab: {fileID: 7888440877155810306, guid: c4f3e23f72e61394482585f960c678ed, type: 3}
+  bombFuseTime: 3
+  bombAmount: 1
+  explosionPrefab: {fileID: -8005443679377180531, guid: cf0bf93b023b8714a9d58adf0fedb9ee, type: 3}
+  explosionLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  explosionDuration: 1
+  explosionRadius: 1
 --- !u!1 &738463803
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +596,7 @@ GameObject:
   - component: {fileID: 976145435}
   - component: {fileID: 976145434}
   - component: {fileID: 976145433}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Indestructibles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2798,7 +2821,7 @@ GameObject:
   - component: {fileID: 1419331213}
   - component: {fileID: 1419331212}
   - component: {fileID: 1419331211}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Destructibles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
